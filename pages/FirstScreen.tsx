@@ -1,8 +1,8 @@
 import React, { useLayoutEffect } from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-export default function FirstScreen({ navigation }: props) {
+export default function FirstScreen({ navigation }) {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerStyle: { backgroundColor: "red" },
@@ -13,7 +13,7 @@ export default function FirstScreen({ navigation }: props) {
           size={24}
           color="#fff"
           style={{ marginRight: 0, padding: 0 }}
-          onPress={() => navigation.navigate("SecondScreen")}
+          onPress={() => navigation.navigate("Second")}
         />
       ),
     });
